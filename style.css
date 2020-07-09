@@ -1,6 +1,161 @@
-.クラス名{
-    
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  z-index: 99;
+  position: absolute;
+  height: 90px;
 }
-.クラス名２{
-
+nav {
+  height: 100%;
+}
+.navbar-nav {
+  height: 100%;
+  font-size: 14px;
+  line-height: 90px;
+  text-align: right;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  margin-top: -14px;
+}
+.dropdown-item {
+  color: #fcfdfd;
+  padding-top: 17px;
+  padding-right: 18px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  display: block;
+  width: 220px;
+  height: auto;
+  text-align: left;
+  line-height: 16px;
+  font-size: 14px;
+  transition: 0.2s;
+  opacity: 1;
+}
+.dropdown-menu {
+  top: 100%;
+  left: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: 0.2s;
+  visibility: hidden;
+  display: block;
+  transform: translateY(-10px);
+}
+.collapsenavbar-collapse > ul {
+  display: flex;
+  height: 100%;
+  margin-bottom: 0;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+img {
+  width: 143px;
+  height: 24.5px;
+}
+.nav-text {
+  color: seashell !important;
+  padding-right: 21px !important;
+  padding-left: 21px !important;
+}
+.nav-text:hover {
+  color: #999999 !important;
+}
+.navbar-expand-lg {
+  position: relative;
+  width: 92.1875%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+  padding: 0;
+}
+header > div > ul > li > a {
+  position: relative;
+  height: 100%;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  transition: 0.2s;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+.dropdown-item:hover {
+  background-color: #442606;
+  color: white;
+}
+.dropdown-menu {
+  background-color: black;
+}
+header > nav > div > ul > .dropdown:hover > .dropdown-menu {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s;
+}
+header > nav > div {
+  font-size: 14px;
+  height: 100%;
+  width: 760.22px;
+}
+.navbar-toggler {
+  border: 0px;
+}
+.dropdown-toggle {
+  height: 90px;
+}
+@media screen and (max-width: 480px) {
+  .navbar-expand-lg {
+    font-size: 14px;
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+  }
+  .p-menu-btn {
+    padding-top: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+  }
+  header {
+    position: static;
+    height: auto;
+    line-height: 60px;
+    background-color: #000000;
+  }
+  header > nav {
+    height: 60px;
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin-left: 0px;
+    margin-left: 0px;
+  }
+  img {
+    height: 18.84px;
+    width: 110px;
+  }
+  .navbar-collapse {
+    line-height: 50px;
+    font-size: 13px;
+  }
+  .navbar-nav {
+    line-height: 50px;
+    text-align: left;
+  }
+  .dropdown-menu {
+    visibility: visible;
+    display: none;
+  }
+  .dropdown-toggle {
+    height: auto;
+  }
 }
