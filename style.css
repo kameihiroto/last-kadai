@@ -81,7 +81,7 @@ header nav .navbar-collapse {
   flex-grow: 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 768px) {
   header {
     position: static;
     height: auto;
@@ -137,7 +137,7 @@ header nav .navbar-collapse {
     box-sizing: border-box;
   }
 
-  .humberger div {
+  .humberger span {
     position: absolute;
     left: 0;
     height: 4px;
@@ -148,15 +148,15 @@ header nav .navbar-collapse {
     box-sizing: border-box;
   }
 
-  .humberger div:nth-of-type(1) {
+  .humberger span:nth-of-type(1) {
     top: 0;
   }
 
-  .humberger div:nth-of-type(2) {
+  .humberger span:nth-of-type(2) {
     top: 10px;
   }
 
-  .humberger div:nth-of-type(3) {
+  .humberger span:nth-of-type(3) {
     bottom: 0;
   }
 }
