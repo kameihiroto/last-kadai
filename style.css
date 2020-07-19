@@ -34,7 +34,6 @@ header nav .navbar-brand img {
 
 header nav div ul li .nav-text {
   color: #fff;
-  padding: 0px 21px !important;
 }
 
 .nav-text:hover {
@@ -96,8 +95,9 @@ header nav .navbar-collapse {
 
   header nav .navbar-brand {
     height: 60px;
-    padding: 0;
     margin: 0 0 0 20px;
+    align-items: center;
+    line-height: 55px;
   }
 
   header nav .navbar-brand img {
@@ -124,6 +124,9 @@ header nav .navbar-collapse {
     display: none;
     visibility: visible;
   }
+  header nav div ul li .dropdown-menu .dropdown-item {
+    margin-left: 19px;
+  }
 
   header nav div ul .nav-item {
     width: 100%;
@@ -139,6 +142,99 @@ header nav .navbar-collapse {
     width: 24px;
     display: inline-block;
     box-sizing: border-box;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    outline: 0;
+  }
+
+  .humberger span {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .humberger span:nth-of-type(1) {
+    top: 0;
+  }
+
+  .humberger span:nth-of-type(2) {
+    top: 10px;
+  }
+
+  .humberger span:nth-of-type(3) {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    position: static;
+    height: 60px;
+    background-color: #000;
+  }
+
+  header nav {
+    margin-left: 0px;
+  }
+
+  header nav .navbar-brand {
+    margin: 0 0 0 20px;
+    align-items: center;
+    line-height: 55px;
+  }
+
+  header nav .navbar-brand img {
+    height: 18.84px;
+    width: 110px;
+  }
+
+  header nav div .navbar-nav {
+    line-height: 50px;
+    text-align: left;
+    background-color: #000;
+  }
+
+  header nav div ul li .nav-link {
+    width: 100%;
+  }
+
+  header .navbar-expand-lg {
+    padding: 0;
+    width: 100%;
+  }
+
+  header nav div ul li .dropdown-menu {
+    display: none;
+    visibility: visible;
+  }
+  header nav div ul li .dropdown-menu .dropdown-item {
+    margin-left: 19px;
+  }
+
+  header nav div ul .nav-item {
+    width: 100%;
+    display: block;
+  }
+  .dropdown-item:hover {
+    background-color: #000;
+  }
+
+  header nav .navbar-toggler .humberger {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    outline: 0;
   }
 
   .humberger span {
