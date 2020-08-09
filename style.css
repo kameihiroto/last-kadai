@@ -1,30 +1,16 @@
 header {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  align-items: center;
   z-index: 99;
   height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
-header .navbar-expand-lg {
-  position: relative;
-  width: 92%;
+header .navbar {
   max-width: 1180px;
-  margin: 0 auto;
   justify-content: space-between;
-  padding: 0;
-}
-
-header nav div .navbar-nav {
-  height: 100%;
-  font-size: 14px;
-  line-height: 90px;
-  display: flex;
-  height: 100%;
-  margin-bottom: 0;
 }
 
 header nav .navbar-brand img {
@@ -32,19 +18,15 @@ header nav .navbar-brand img {
   height: 24px;
 }
 
-header nav div ul li .nav-text {
+header nav ul li .nav-text {
   color: #fff;
 }
 
-.nav-text:hover {
+header .nav-text:hover {
   color: #999;
 }
 
-header nav div ul li .dropdown-menu {
-  top: 100%;
-  left: 0;
-  height: auto;
-  width: auto;
+header nav ul li .dropdown-menu {
   opacity: 0;
   transition: 0.2s;
   visibility: hidden;
@@ -53,188 +35,71 @@ header nav div ul li .dropdown-menu {
   background-color: #000;
 }
 
-header nav div ul .dropdown:hover .dropdown-menu {
+header nav ul .dropdown:hover .dropdown-menu {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
 
-header nav div ul .nav-item .dropdown-menu .dropdown-item {
+header nav ul .nav-item .dropdown-menu .dropdown-item {
   color: #fff;
-  padding: 17px 18px;
+  padding: 18px;
   display: block;
-  height: auto;
-  text-align: left;
   line-height: 16px;
   font-size: 14px;
   transition: 0.2s;
-  opacity: 1;
 }
 
-.dropdown-item:hover {
+header .dropdown-item:hover {
   background-color: #442606;
-  color: #fff;
 }
 
 header nav .navbar-collapse {
   flex-grow: 0;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    position: static;
-    height: auto;
-    line-height: 60px;
-    background-color: #000;
-  }
-
-  header nav {
-    height: 60px;
-    margin-left: 0px;
-  }
-
-  header nav .navbar-brand {
-    height: 60px;
-    margin: 0 0 0 20px;
-    align-items: center;
-    display: flex;
-  }
-
-  header nav .navbar-brand img {
-    height: 18.84px;
-    width: 110px;
-  }
-  header nav .navbar-toggler {
-    display: flex;
-    align-items: center;
-  }
-
-  header nav div .navbar-nav {
-    line-height: 50px;
-    text-align: left;
-    background-color: #000;
-  }
-
-  header nav div ul li .nav-link {
-    width: 100%;
-  }
-
-  header .navbar-expand-lg {
-    padding: 0;
-    width: 100%;
-  }
-
-  header nav div ul li .dropdown-menu {
-    display: none;
-    visibility: visible;
-  }
-  header nav div ul li .dropdown-menu .dropdown-item {
-    margin-left: 19px;
-  }
-
-  header nav div ul .nav-item {
-    width: 100%;
-    display: block;
-  }
-  .dropdown-item:hover {
-    background-color: #000;
-  }
-
-  header nav .navbar-toggler .humberger {
-    position: relative;
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-    box-sizing: border-box;
-  }
-  .navbar-toggler:focus,
-  .navbar-toggler:hover {
-    outline: 0;
-  }
-
-  .humberger span {
-    position: absolute;
-    left: 0;
-    height: 4px;
-    width: 24px;
-    background-color: #fff;
-    border-radius: 2px;
-    display: inline-block;
-    box-sizing: border-box;
-  }
-
-  .humberger span:nth-of-type(1) {
-    top: 0;
-  }
-
-  .humberger span:nth-of-type(2) {
-    top: 10px;
-  }
-
-  .humberger span:nth-of-type(3) {
-    bottom: 0;
-  }
+header nav .navbar-nav {
+  font-size: 14px;
+  line-height: 90px;
 }
 
 @media screen and (max-width: 991px) {
   header {
-    position: static;
     height: 60px;
     background-color: #000;
-    display: flex;
-  }
-
-  header nav {
-    margin-left: 0px;
   }
 
   header nav .navbar-brand {
-    margin: 0 0 0 20px;
-    align-items: center;
+    margin-left: 20px;
     display: flex;
     height: 60px;
     align-items: center;
   }
 
   header nav .navbar-brand img {
-    height: 18.84px;
+    height: 19px;
     width: 110px;
   }
-  header nav .navbar-toggler {
-    display: flex;
-    align-items: center;
-  }
 
-  header nav div .navbar-nav {
+  header nav .navbar-nav {
     line-height: 50px;
-    text-align: left;
     background-color: #000;
   }
 
-  header nav div ul li .nav-link {
-    width: 100%;
+  header .nav-text:hover {
+    color: #fff;
   }
 
-  header .navbar-expand-lg {
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  header nav div ul li .dropdown-menu {
+  #navbarSupportedContent .dropdown-menu {
     display: none;
-    visibility: visible;
-  }
-  header nav div ul li .dropdown-menu .dropdown-item {
-    margin-left: 19px;
   }
 
-  header nav div ul .nav-item {
-    width: 100%;
+  #navbarSupportedContent .dropdown-menu.show {
     display: block;
   }
-  .dropdown-item:hover {
-    background-color: #000;
+
+  header nav ul li .dropdown-menu .dropdown-item {
+    margin-left: 19px;
   }
 
   header nav .navbar-toggler .humberger {
@@ -242,33 +107,31 @@ header nav .navbar-collapse {
     height: 24px;
     width: 24px;
     display: inline-block;
-    box-sizing: border-box;
   }
+
   .navbar-toggler:focus,
   .navbar-toggler:hover {
     outline: 0;
   }
 
-  .humberger span {
+  header .humberger span {
     position: absolute;
     left: 0;
     height: 4px;
-    width: 24px;
+    width: 100%;
     background-color: #fff;
     border-radius: 2px;
-    display: inline-block;
-    box-sizing: border-box;
   }
 
-  .humberger span:nth-of-type(1) {
-    top: 0;
+  header .humberger span:nth-of-type(1) {
+    top: 3px;
   }
 
-  .humberger span:nth-of-type(2) {
-    top: 10px;
+  header .humberger span:nth-of-type(2) {
+    top: 50%;
   }
 
-  .humberger span:nth-of-type(3) {
+  header .humberger span:nth-of-type(3) {
     bottom: 0;
   }
 }
