@@ -1,3 +1,8 @@
+/* <------------ common */
+
+/* -------------> common */
+
+/* <------------ header */
 header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -9,16 +14,21 @@ header {
 }
 
 header .navbar {
-  max-width: 1180px;
-  justify-content: space-between;
+  max-width: 1199px;
+  padding: 0;
 }
 
-header nav .navbar-brand img {
+header .navbar-brand img {
   width: 143px;
   height: 24px;
 }
 
-header nav ul li .nav-text {
+header .navbar-nav {
+  font-size: 14px;
+  line-height: 90px;
+}
+
+header li .nav-text {
   color: #fff;
 }
 
@@ -26,7 +36,7 @@ header .nav-text:hover {
   color: #999;
 }
 
-header nav ul li .dropdown-menu {
+header li .dropdown-menu {
   opacity: 0;
   transition: 0.2s;
   visibility: hidden;
@@ -35,13 +45,13 @@ header nav ul li .dropdown-menu {
   background-color: #000;
 }
 
-header nav ul .dropdown:hover .dropdown-menu {
+header .dropdown:hover .dropdown-menu {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
 
-header nav ul .nav-item .dropdown-menu .dropdown-item {
+header .dropdown-menu .dropdown-item {
   color: #fff;
   padding: 18px;
   display: block;
@@ -54,84 +64,102 @@ header .dropdown-item:hover {
   background-color: #442606;
 }
 
-header nav .navbar-collapse {
-  flex-grow: 0;
-}
-
-header nav .navbar-nav {
-  font-size: 14px;
-  line-height: 90px;
-}
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   header {
     height: 60px;
     background-color: #000;
   }
 
-  header nav .navbar-brand {
+  .header .navbar {
+    padding: 8px 16px;
+  }
+
+  header .navbar-brand {
     margin-left: 20px;
     display: flex;
     height: 60px;
     align-items: center;
   }
 
-  header nav .navbar-brand img {
+  header .navbar-brand img {
     height: 19px;
     width: 110px;
   }
 
-  header nav .navbar-nav {
+  header .navbar-toggler {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
+  header .navbar-toggler:focus,
+  header .navbar-toggler:hover {
+    outline: 0;
+  }
+
+  header .hamburger {
+    width: 16px;
+    height: 2px;
+    color: #fff;
+    background: currentColor;
+    position: relative;
+    display: block;
+  }
+
+  header .hamburger::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    width: 100%;
+    height: 100%;
+    background: currentColor;
+    left: 0;
+  }
+
+  header .hamburger::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    width: 100%;
+    height: 100%;
+    background: currentColor;
+    left: 0;
+  }
+
+  header .navbar-nav {
     line-height: 50px;
     background-color: #000;
   }
 
   header .nav-text:hover {
     color: #fff;
+    background-color: #000;
   }
 
-  #navbarSupportedContent .dropdown-menu {
+  header .navbar-collapse .dropdown-menu {
     display: none;
   }
 
-  #navbarSupportedContent .dropdown-menu.show {
+  header .navbar-collapse .dropdown-menu.show {
     display: block;
   }
 
-  header nav ul li .dropdown-menu .dropdown-item {
+  header .dropdown-menu .dropdown-item {
     margin-left: 19px;
   }
 
-  header nav .navbar-toggler .humberger {
-    position: relative;
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-  }
-
-  .navbar-toggler:focus,
-  .navbar-toggler:hover {
-    outline: 0;
-  }
-
-  header .humberger span {
-    position: absolute;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 2px;
-  }
-
-  header .humberger span:nth-of-type(1) {
-    top: 3px;
-  }
-
-  header .humberger span:nth-of-type(2) {
-    top: 50%;
-  }
-
-  header .humberger span:nth-of-type(3) {
-    bottom: 0;
+  header .dropdown-item:hover {
+    background-color: #000;
   }
 }
+
+/* -----------> header */
+
+/* <----------- main */
+
+/* -----------> main */
+
+/* <----------- footer */
+
+/* -----------> footer */
