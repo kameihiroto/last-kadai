@@ -21,6 +21,7 @@ header .navbar {
 header .navbar-brand img {
   width: 143px;
   height: 24px;
+  margin-left: 10px;
 }
 
 header .navbar-nav {
@@ -70,15 +71,8 @@ header .dropdown-item:hover {
     background-color: #000;
   }
 
-  .header .navbar {
+  header .navbar {
     padding: 8px 16px;
-  }
-
-  header .navbar-brand {
-    margin-left: 20px;
-    display: flex;
-    height: 60px;
-    align-items: center;
   }
 
   header .navbar-brand img {
@@ -127,6 +121,13 @@ header .dropdown-item:hover {
     left: 0;
   }
 
+  header .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
   header .navbar-nav {
     line-height: 50px;
     background-color: #000;
@@ -146,7 +147,7 @@ header .dropdown-item:hover {
   }
 
   header .dropdown-menu .dropdown-item {
-    margin-left: 19px;
+    margin-left: 20px;
   }
 
   header .dropdown-item:hover {
