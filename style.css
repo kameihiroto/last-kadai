@@ -143,6 +143,9 @@ header .dropdown-item:hover {
 
   header .navbar-collapse .dropdown-menu.show {
     display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   header .dropdown-menu .dropdown-item {
