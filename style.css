@@ -134,6 +134,7 @@ header .dropdown-item:hover {
 
   header .nav-text:hover {
     color: #fff;
+    background-color: #000;
   }
 
   header .navbar-collapse .dropdown-menu {
