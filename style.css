@@ -16,7 +16,6 @@ header {
 header .navbar {
   max-width: 1200px;
   padding: 0;
-  width: 92%;
 }
 
 header .navbar-brand img {
@@ -160,6 +159,90 @@ header .dropdown-item:hover {
 /* -----------> header */
 
 /* <----------- main */
+
+/*<---------------top*/
+main {
+  position: relative;
+}
+
+main .p-header-picture {
+  position: relative;
+  padding-bottom: 56%;
+  background-image: url(image/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main .p-header-content__inner {
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+main .p-header-content__title {
+  color: #fff;
+  font-size: 36px;
+}
+
+main .t-container {
+  writing-mode: vertical-rl;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main .p-index-content01__desc {
+  font-size: 14px;
+  line-height: 2.6;
+}
+
+main .p-index-content01__title {
+  font-family: "游明朝";
+}
+
+main .p-index-content01 {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 50px 0 80px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+main .l-inner {
+  max-width: 1200px;
+  position: relative;
+  width: 92%;
+}
+
+@media screen and (max-width: 767px) {
+  main .p-header-picture {
+    height: 360px;
+  }
+
+  main .p-header-content__title {
+    font-size: 20px;
+  }
+
+  main .p-index-content01__title {
+    font-size: 20px;
+  }
+
+  main .p-index-content01__desc {
+    line-height: 2;
+    font-size: 14px;
+  }
+
+  main .p-index-content01 {
+    margin-bottom: 40px;
+    padding: 32px 0 32px;
+  }
+}
+
+/*------------>top*/
 
 /* -----------> main */
 
