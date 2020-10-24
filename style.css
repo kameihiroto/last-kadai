@@ -224,6 +224,7 @@ main .p-index-content01 {
   text-align: center;
   background-color: #000;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 main .l-inner {
@@ -258,6 +259,7 @@ main .l-inner {
   main .p-index-content01 {
     margin-bottom: 40px;
     padding: 32px 0 32px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 991px) {
