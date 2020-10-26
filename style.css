@@ -162,19 +162,16 @@ header .dropdown-item:hover {
 /* <----------- main */
 
 /*<---------------top*/
-main {
-  position: relative;
-}
 
-main .p-header-picture {
+#top .top-picture {
   position: relative;
   height: 56vw;
-  background-image: url(image/coffee.jpg);
+  background-image: url(./image/coffee.jpg);
   background-size: cover;
   background-position: center;
 }
 
-main .p-header-picture::before {
+#top .top-picture::before {
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -183,7 +180,7 @@ main .p-header-picture::before {
   background: rgba(33, 15, 7, 0.3);
 }
 
-main .p-header-content__inner {
+#top .top-picture-title {
   z-index: 1;
   position: absolute;
   top: 50%;
@@ -194,31 +191,15 @@ main .p-header-content__inner {
   transform: translateY(-50%);
 }
 
-main .p-header-content__title {
+#top .top-text {
+  writing-mode: vertical-rl;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
   color: #fff;
   font-size: 36px;
 }
 
-main .t-container {
-  writing-mode: vertical-rl;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-}
-
-main .p-index-content01__desc {
-  font-size: 14px;
-  line-height: 2.6;
-  margin-bottom: 0;
-}
-
-main .p-index-content01__title {
-  font-family: "游明朝";
-  font-size: 36px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-main .p-index-content01 {
+#top .top-content {
   position: relative;
   padding: 52px 0 80px;
   text-align: center;
@@ -227,43 +208,56 @@ main .p-index-content01 {
   margin-bottom: 30px;
 }
 
-main .l-inner {
+#top .l-inner {
   max-width: 1200px;
   position: relative;
   width: 92%;
 }
 
+#top h2 {
+  font-family: "游明朝";
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+#top p {
+  font-size: 14px;
+  line-height: 2.6;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 767px) {
-  main .p-header-picture {
+  #top .top-picture {
     height: 360px;
   }
 
-  main .p-header-content__title {
+  #top .top-text {
     font-size: 20px;
   }
 
-  main .l-inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  main .p-index-content01__title {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-
-  main .p-index-content01__desc {
-    line-height: 2;
-  }
-
-  main .p-index-content01 {
+  #top .top-content {
     margin-bottom: 40px;
     padding: 32px 0 32px;
     margin-bottom: 40px;
   }
+
+  #top .l-inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #top h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  #top p {
+    line-height: 2;
+  }
 }
 @media only screen and (max-width: 991px) {
-  main .l-inner {
+  #top .l-inner {
     width: 88%;
   }
 }
