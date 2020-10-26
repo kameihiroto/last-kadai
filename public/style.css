@@ -16,7 +16,6 @@ header {
 header .navbar {
   max-width: 1200px;
   padding: 0;
-  width: 92%;
 }
 
 header .navbar-brand img {
@@ -70,6 +69,7 @@ header .dropdown-item:hover {
   header {
     height: 60px;
     background-color: #000;
+    position: relative;
   }
 
   header .navbar {
@@ -160,6 +160,109 @@ header .dropdown-item:hover {
 /* -----------> header */
 
 /* <----------- main */
+
+/*<---------------top*/
+
+#top .top-picture {
+  position: relative;
+  height: 56vw;
+  background-image: url(./image/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#top .top-picture::before {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(33, 15, 7, 0.3);
+}
+
+#top .top-picture-title {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  transform: translateY(-50%);
+}
+
+#top .top-text {
+  writing-mode: vertical-rl;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 36px;
+}
+
+#top .top-content {
+  position: relative;
+  padding: 52px 0 80px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#top .l-inner {
+  max-width: 1200px;
+  position: relative;
+  width: 92%;
+}
+
+#top h2 {
+  font-family: "游明朝";
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+#top p {
+  font-size: 14px;
+  line-height: 2.6;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #top .top-picture {
+    height: 360px;
+  }
+
+  #top .top-text {
+    font-size: 20px;
+  }
+
+  #top .top-content {
+    margin-bottom: 40px;
+    padding: 32px 0 32px;
+    margin-bottom: 40px;
+  }
+
+  #top .l-inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #top h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  #top p {
+    line-height: 2;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #top .l-inner {
+    width: 88%;
+  }
+}
+
+/*------------>top*/
 
 /* -----------> main */
 
